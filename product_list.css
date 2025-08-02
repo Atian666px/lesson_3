@@ -102,6 +102,14 @@
 }
 
 .footer-menu{
+    margin: 0 auto;
+    width: 1296px;
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.footer-menu{
 	max-width: 1296px;
 	width: 100%;
 	margin: 0 auto;
