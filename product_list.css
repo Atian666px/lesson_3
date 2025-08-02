@@ -1,0 +1,121 @@
+:root {
+    --neutral-0: #ffffff;
+    --neutral-100: #F8F9FA;
+    --neutral-200: #E9ECEF;
+    --neutral-300: #DEE2E6;
+    --neutral-400: #CED4DA;
+    --neutral-500: #ADB5BD;
+    --neutral-600: #6C757D;
+    --neutral-700: #495057;
+    --neutral-800: #343A40;
+    --neutral-900: #212529;
+    --primary-100: #F5FEE7;
+    --primary-200: #E8FEC5;
+    --primary-300: #C0FA73;
+    --primary-400: #57A203;
+    --primary-500: #477A11;
+	--danger-300: #D74F4F;
+}
+
+.container a:hover{
+    color:var(--primary-400);
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    content: '/';
+    padding: 0px 12px;
+    color: var(--neutral-300);
+    font-weight: 700;
+}
+
+.breadcrumb-item{
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+.breadcrumb-link{
+    color: var(--neutral-600);
+}
+
+.breadcrumb-link:hover {
+    color: var(--primary-400);
+}
+
+@media (max-width: 767px) {
+    .breadcrumb-item + .breadcrumb-item::before {
+        padding: 0px 8px;
+    }
+    .breadcrumb-item {
+        font-size: 14px;
+    }
+}
+
+.category-list .active{
+    color: var(--primary-400);
+}
+
+.category-list a:hover{
+    color: var(--primary-400);
+}
+
+.col-4 h2{
+    font-weight: 700;
+}
+
+.page-item .btn{
+    padding: 8px 15px;
+    border-radius: 0;
+    font-weight: 400;
+    width:40px;
+    height: 40px;
+}
+
+.page-item .active,
+.page-item .btn:hover{
+    background-color: var(--primary-300);
+    font-weight: 500;
+}
+
+.page-item .btn:disabled:hover {
+    background-color: inherit;
+    font-weight: inherit;
+    cursor: default;
+}
+
+.discount-banner{
+    background-color: var(--primary-200);
+}
+
+.discount-banner .btn{
+    background-color: var(--neutral-900);
+    color:var(--neutral-0);
+}
+
+.discount-banner .btn:hover{
+    background-color: var(--neutral-600);
+    color:var(--neutral-0);
+}
+
+.discount-banner p{
+    font-weight: 700;
+}
+
+.footer-menu{
+    margin: 0 auto;
+    width: 1296px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.footer-menu a:hover{
+    color: var(--primary-400);
+}
+
+footer{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-600);
+}
